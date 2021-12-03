@@ -1,0 +1,43 @@
+.bg-color-mixin {
+    background-color: silver;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    padding: 1rem;
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    &-link {
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid silver;
+        padding: 1rem;
+
+        &:hover {
+            .bg-color-mixin();
+        }
+    }
+
+    &--active {
+        .bg-color-mixin();
+    }
+}
