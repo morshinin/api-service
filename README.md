@@ -1,4 +1,6 @@
-# api-service
+# API-service
+
+Vue 2 SPA application with API service layer.
 
 ## Project setup
 ```
